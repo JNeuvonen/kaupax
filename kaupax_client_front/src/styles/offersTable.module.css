@@ -1,0 +1,35 @@
+.tableHeader {
+  color: #667085;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.tableCell {
+  color: #667085;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.tableRow:hover {
+  cursor: pointer;
+  background-color: rgba(245, 245, 245);
+}
+
+.boldedTableText {
+  color: #101828;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.iconDiv {
+  width: 30px;
+  height: 30px;
+  background: #d1d1d1;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

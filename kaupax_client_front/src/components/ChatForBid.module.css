@@ -1,0 +1,73 @@
+.userMessage {
+  width: max-content;
+  max-width: 70%;
+  background-color: #d9fdd3;
+  color: black;
+  min-width: 30%;
+  padding: 5px 15px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.userMessageContainer {
+  width: 100%;
+  display: flex;
+  margin-bottom: 16px;
+  justify-content: flex-end;
+}
+
+.realtorMessageContainer {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.message {
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+.realtorMessage {
+  width: max-content;
+  max-width: 70%;
+  background-color: rgb(223, 218, 218);
+  color: black;
+  min-width: 30%;
+  padding: 5px 15px;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  column-gap: 16px;
+}
+
+.sendMessageInput {
+  width: 100%;
+  padding: 10px;
+  height: 38px;
+  border-radius: 10px;
+  border: 1px solid #615959;
+  z-index: 3;
+  border: none;
+  font-weight: 400;
+  background-color: #c6c6c6;
+}
+
+.sendMessageInput:focus {
+  outline: none;
+}
+
+.inputWrapper {
+  background-color: #696969;
+  border-radius: 10px;
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  margin-bottom: -16px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+}

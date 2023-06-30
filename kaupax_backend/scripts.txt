@@ -1,0 +1,1 @@
+ts-node scripts/prisma/delete-tables.ts --listing or pass -all as argument to delete all tables

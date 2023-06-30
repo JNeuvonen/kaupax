@@ -1,0 +1,5 @@
+.buttons {
+  width: max-content;
+  text-transform: capitalize;
+  font-size: 15px;
+}

@@ -1,0 +1,73 @@
+.secondSectionContainer {
+  min-height: 100vh;
+}
+
+.infoItem {
+  display: grid;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 35px;
+  letter-spacing: -0.02em;
+}
+
+.contentContainer {
+  width: max-content;
+  margin: 0 auto;
+  row-gap: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.infoCardReverse {
+  max-width: 600px;
+  width: 100%;
+}
+
+.infoCard {
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.infoCard div {
+  width: 100%;
+}
+
+.infoCardIcon {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  height: auto;
+  width: 100%;
+  max-width: 300px;
+}
+
+@media (max-width: 1200px) {
+  .infoItem {
+    grid-template-columns: repeat(1, 100%);
+    grid-column-gap: 35px;
+    row-gap: 35px;
+  }
+}
+
+@media (max-width: 800px) {
+  .infoCard {
+    max-width: 300px;
+    width: 100%;
+  }
+
+  .infoCardReverse {
+    max-width: 300px;
+    width: 100%;
+  }
+
+  .image {
+    max-width: 150px;
+  }
+}

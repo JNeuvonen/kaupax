@@ -1,0 +1,19 @@
+.mainTitle {
+  font-size: 37px;
+  letter-spacing: -0.04em;
+}
+
+.paragraph {
+  font-size: 25px;
+  letter-spacing: -0.04em;
+}
+
+@media (max-width: 700px) {
+  .mainTitle {
+    font-size: 28px !important;
+  }
+
+  .paragraph {
+    font-size: 20px;
+  }
+}

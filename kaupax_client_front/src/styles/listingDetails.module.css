@@ -1,0 +1,38 @@
+.mainTitle {
+  font-weight: 600;
+  font-size: 42px;
+  letter-spacing: -0.04em;
+  color: var(--neutral-grey-900);
+}
+
+.secondaryTitle {
+  letter-spacing: -0.04em;
+  color: var(--neutral-grey-900);
+  font-size: 25px;
+}
+
+.infoDiv {
+  margin-top: 46px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+
+.infoCard {
+  margin-top: 8px;
+  padding: 14px;
+}
+
+.infoRow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bidRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

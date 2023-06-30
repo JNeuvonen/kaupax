@@ -1,0 +1,17 @@
+@media (max-width: 600px) {
+  .addressOptionText {
+    font-size: 17px;
+    font-weight: 700;
+  }
+}
+
+.mainTitle {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.buttons {
+  width: max-content;
+  text-transform: capitalize;
+  font-size: 15px;
+}

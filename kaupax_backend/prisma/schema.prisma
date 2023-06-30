@@ -1,0 +1,114 @@
+generator client {
+    provider = "prisma-client-js"
+}
+
+datasource db {
+    provider = "postgresql"
+    url      = env("DATABASE_URL")
+}
+
+model Client {
+    id        Int       @id @default(autoincrement())
+    password  String?
+    firstName String?
+    surname   String?
+    email     String    @unique
+    phone     String?
+    createdAt DateTime  @default(now())
+    updatedAt DateTime  @updatedAt
+    Listing   Listing[]
+}
+
+model Realtor {
+    id                    Int       @id @default(autoincrement())
+    city                  String?
+    postalArea            String?
+    country               String?
+    addressFull           String?
+    firstName             String?
+    surname               String?
+    email                 String    @unique
+    phone                 String?
+    password              String?
+    company               String?
+    entrepreneur          Boolean?
+    licencedAgent         Boolean?
+    biography             String?
+    experienceInYears     Int?
+    specialty             String[]
+    languages             String[]
+    lat                   Float?
+    lng                   Float?
+    verified              Boolean   @default(false)
+    verificationSubmitted Boolean   @default(false)
+    profilePicture        String?
+    createdAt             DateTime  @default(now())
+    updatedAt             DateTime  @updatedAt
+    Listing               Listing[]
+    Bid                   Bid[]
+}
+
+model Message {
+    id        Int      @id @default(autoincrement())
+    realtorId Int?
+    clientId  Int?
+    content   String
+    createdAt DateTime @default(now())
+    listingId Int?
+    Bid       Bid?     @relation(fields: [bidId], references: [id])
+    bidId     Int?
+}
+
+model Listing {
+    id                         Int       @id @default(autoincrement())
+    lng                        Float
+    lat                        Float
+    street                     String
+    isActive                   Boolean   @default(true)
+    city                       String
+    addressFull                String
+    country                    String
+    surfaceArea                Int
+    floor                      Int?
+    condition                  String
+    yearBuilt                  Int?
+    listingType                String
+    objective                  String?
+    freeDescription            String?
+    listersEmail               String
+    usersEstimateOfPrice       Float?
+    numberOfRooms              Int?
+    uuid                       String    @unique
+    createdAt                  DateTime  @default(now())
+    updatedAt                  DateTime  @updatedAt
+    pictureAdded               Boolean?  @default(false)
+    listingClosed              DateTime?
+    realtorId                  Int?
+    listersPhone               String
+    locality                   String?
+    congratulationsMessageSent Boolean   @default(false)
+    ActiveRealtor              Realtor?  @relation(fields: [realtorId], references: [id])
+    Picture                    String[]
+    profilePictureId           Int?
+    Client                     Client?   @relation(fields: [clientId], references: [id])
+    clientId                   Int?
+    Bid                        Bid[]     @relation("ListingToBid")
+    acceptedBidId              Int?
+}
+
+model Bid {
+    id           Int       @id @default(autoincrement())
+    price        Float
+    createdAt    DateTime  @default(now())
+    updatedAt    DateTime  @updatedAt
+    offerUpdated DateTime?
+    listingId    Int
+    Listing      Listing?  @relation("ListingToBid", fields: [listingId], references: [id], onDelete: Cascade)
+    bidAccepted  Boolean   @default(false)
+    bidPending   Boolean   @default(true)
+    comission    Float
+    message      String
+    Message      Message[]
+    Realtor      Realtor?  @relation(fields: [realtorId], references: [id])
+    realtorId    Int
+}

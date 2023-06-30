@@ -1,0 +1,10 @@
+.contentContainer {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 16px;
+  background-color: rgb(235, 235, 235);
+  min-height: 100vh;
+  max-height: max-content;
+  border-radius: 10px;
+  padding-top: 25vh;
+}

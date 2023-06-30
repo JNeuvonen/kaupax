@@ -1,0 +1,28 @@
+.mainTitle {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.whiteCard {
+  width: 140px;
+}
+
+.typography {
+  font-size: 20px;
+  word-wrap: break-word;
+}
+
+@media (max-width: 700px) {
+  .whiteCard {
+    width: 100px;
+  }
+
+  .typography {
+    font-size: 15px;
+  }
+}
+
+.buttons {
+  font-size: 15px;
+  width: max-content;
+}

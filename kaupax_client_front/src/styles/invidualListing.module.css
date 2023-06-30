@@ -1,0 +1,14 @@
+.headerSectionTitle {
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.outlinedGreyCard {
+  color: var(--primary-blue-500);
+  background-color: var(--card-grey-400);
+  padding: 2px 18px;
+  border-radius: 7px;
+  font-weight: 500;
+  font-size: 16px;
+}

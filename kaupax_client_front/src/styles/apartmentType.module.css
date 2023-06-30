@@ -1,0 +1,52 @@
+.mainTitle {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.apartmentCard {
+  width: 130px;
+  padding: 10px !important;
+}
+
+.contentWrapper {
+  display: flex;
+  row-gap: 16px;
+  column-gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.apartmentInfoTypography {
+  font-size: 18px;
+}
+
+@media (max-width: 1000px) {
+  .mainTitle {
+    font-size: 32px;
+  }
+
+  .apartmentInfoTypography {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 472px) {
+  .mainTitle {
+    font-size: 25px;
+  }
+  .apartmentCard {
+    width: 150px;
+    padding: 10px !important;
+  }
+}
+
+@media (max-width: 472px) {
+  .apartmentCard {
+    width: 100px;
+    padding: 10px !important;
+  }
+
+  .apartmentInfoTypography {
+    font-size: 13px;
+  }
+}

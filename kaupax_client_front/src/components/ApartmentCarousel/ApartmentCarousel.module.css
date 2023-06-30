@@ -1,0 +1,27 @@
+.container {
+  width: 100vw;
+  height: 220px;
+  z-index: 5 !important;
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  padding: 16px;
+  transition: 0.22s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.carouselCard {
+  display: flex;
+  column-gap: 16px;
+  padding: 10px;
+  background-color: rgb(240, 240, 240);
+  border-radius: 10px;
+  position: relative;
+  height: 140px;
+  align-items: center;
+}
+
+.priceTag {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}

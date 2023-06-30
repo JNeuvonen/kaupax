@@ -1,0 +1,85 @@
+.header {
+  color: var(--neutral-grey-800);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.textarea {
+  border: 2px solid #d7d7d7;
+  border-radius: 10px;
+  width: 100%;
+  height: 549px;
+  padding: 10px;
+  font-size: 14px;
+  color: var(--neutral-grey-600);
+  font-weight: 500;
+  margin-top: 16px;
+  display: flex;
+}
+
+.textarea:focus {
+  outline: none; /* Remove default outline */
+  background-color: #fff; /* Change background color */
+  border: 2px solid #007bff; /* Change border color and width */
+  box-shadow: 0 0 5px #007bff;
+}
+
+.contentContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  position: relative;
+  column-gap: 32px;
+}
+
+.dragAndDropArea {
+  border-radius: 10px;
+  width: 100%;
+  height: 300px;
+  border: 2px solid #d7d7d7;
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.fileInputHidden {
+  display: none;
+}
+
+.addedPicturesContainer {
+  width: 100%;
+  margin-top: 32px;
+  column-gap: 16px;
+  row-gap: 16px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  max-width: 150px;
+  height: auto;
+  transition: transform 0.2s ease-in-out;
+}
+
+.image:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 1000px) {
+  .contentContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    position: relative;
+    column-gap: 32px;
+    row-gap: 32px;
+  }
+
+  .textarea {
+    height: 350px;
+  }
+}

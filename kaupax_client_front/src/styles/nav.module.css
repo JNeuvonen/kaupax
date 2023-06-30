@@ -1,0 +1,98 @@
+.navLogoText {
+  color: var(--primary-blue-500);
+  line-height: 24px;
+  font-style: normal;
+  font-size: 30px;
+}
+
+.navItems {
+  color: var(--neutral-grey-900);
+  font-weight: 600;
+  font-size: 16px;
+  font-style: normal;
+}
+
+.loginButton {
+  height: 44px;
+  font-size: 15px;
+  padding: 12px;
+  text-transform: capitalize;
+}
+
+.blur {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 1000;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.menuMobileContentContainer {
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.menuMobile {
+  position: fixed;
+  width: 100vw;
+  left: 0;
+  top: -400px;
+  height: 400px;
+  transition: top 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  z-index: 100000 !important;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background-color: white;
+  padding: 16px;
+}
+
+.nav {
+  top: 0;
+  width: 100vw;
+  position: fixed;
+  align-items: center;
+  display: flex;
+  background-color: #fafafa;
+  column-gap: 50px;
+  height: 94px;
+  padding-left: 16px;
+  padding-right: 16px;
+  z-index: 5;
+}
+
+@media (max-width: 1300px) {
+  .navItems {
+    max-width: 100px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .navItems {
+    max-width: max-content;
+  }
+}
+
+.navProfile {
+  padding: 8px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  border-radius: 10px;
+  background-color: rgba(232, 232, 232);
+  position: relative;
+}
+
+.navProfileUser {
+  background-color: var(--neutral-grey-900);
+  color: white;
+  padding: 6px;
+  font-size: 12px;
+  border-radius: 5px;
+}

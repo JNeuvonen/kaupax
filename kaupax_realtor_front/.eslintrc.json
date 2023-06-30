@@ -1,0 +1,36 @@
+{
+    "root": true,
+    "env": {
+      "es2020": true,
+      "node": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "sourceType": "module",
+      "ecmaVersion": 2020,
+      "project": ["./tsconfig.json"]
+    },
+    "extends": [
+      "eslint:recommended",
+      "next/core-web-vitals",
+      "plugin:@typescript-eslint/recommended",
+      "plugin:prettier/recommended"
+    ],
+  
+    "rules": {
+      "no-param-reassign": "error",
+      "eqeqeq": "error",
+      "no-console": "error",
+      "no-useless-escape": "warn",
+      "no-unused-vars": "off",
+      "@typescript-eslint/no-unused-vars": "error",
+      "no-unused-expressions": "error",
+      "prettier/prettier": [
+        "error",
+        {
+          "endOfLine": "auto"
+        }
+      ]
+    }
+  }
+  

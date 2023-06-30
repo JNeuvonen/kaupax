@@ -1,0 +1,12 @@
+
+FROM node:16.17.0-alpine
+WORKDIR /usr/app
+COPY ./ ./
+RUN npm install
+RUN npx prisma generate
+RUN npm install -g typescript
+
+RUN tsc
+EXPOSE 8080
+
+CMD ["npm", "start"]

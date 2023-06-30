@@ -1,0 +1,44 @@
+html,
+body {
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans, -apple-system,
+    BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans,
+    Droid Sans, Helvetica Neue, sans-serif;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+:root {
+  --neutral-grey-900: #0f172a;
+  --neutral-grey-800: #344054;
+  --neutral-grey-600: #475569;
+  --neutral-grey-500: #667085;
+  --neutral-grey-400: #94a3b8;
+  --primary-blue-500: #1d4ed8;
+  --primary-blue-300: #6183e4;
+  --dark-blue-500: #001d3f;
+
+  --card-grey-400: #f9f5ff;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}

@@ -1,0 +1,54 @@
+.blur {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 1000;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.nav {
+  top: 0;
+  width: 100vw;
+  position: fixed;
+  align-items: center;
+  display: flex;
+  background-color: #fafafa;
+  border-bottom: 1px solid rgb(220, 218, 218);
+  column-gap: 50px;
+  height: 94px;
+  padding-left: 16px;
+  padding-right: 16px;
+  z-index: 5;
+}
+
+.menuMobileContentContainer {
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.navLogoText {
+  color: var(--primary-blue-500);
+  line-height: 24px;
+  font-style: normal;
+  font-size: 30px;
+}
+
+.menuMobile {
+  position: fixed;
+  width: 100vw;
+  left: 0;
+  top: -400px;
+  height: 400px;
+  transition: top 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  z-index: 100000 !important;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background-color: white;
+  padding: 16px;
+}

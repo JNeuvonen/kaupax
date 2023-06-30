@@ -1,0 +1,19 @@
+.header {
+  font-size: 35px !important;
+}
+
+@media (max-width: 700px) {
+  .header {
+    font-size: 24px !important;
+  }
+}
+
+.ctaButton {
+  font-size: 20px !important;
+}
+
+@media (max-width: 700px) {
+  .ctaButton {
+    font-size: 15px !important;
+  }
+}
