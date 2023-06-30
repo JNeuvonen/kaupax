@@ -29,4 +29,4 @@ The backend is written in Node, and the demo site that is online uses AWS RDS Po
 
 # Running locally
 
-At present, it is not practical to provide a comprehensive guide on running this locally due to the requirement of multiple API keys for proper functionality.
+At present, it is not practical to provide a comprehensive guide on running this locally due to the requirement of multiple API keys and some AWS configuration for proper functionality.
