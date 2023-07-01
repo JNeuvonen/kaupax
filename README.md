@@ -11,7 +11,7 @@ Currently, the code is at the Minimum Viable Product (MVP) stage. The primary ai
 
 Both clients and realtors have their own front ends.
 
-The backend is written in Node, and the demo site that is online uses AWS RDS Postgresql DB. Both front-ends are written using Next and MUI.
+The backend is written in Node, and the demo site that is online uses AWS RDS Postgresql DB. Both front-ends are written using Next/React and MUI.
  
 # Tech used
 
