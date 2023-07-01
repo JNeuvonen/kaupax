@@ -13,7 +13,7 @@ Both clients and realtors have their own front ends.
 
 The backend is written in Node, and the demo site that is online uses AWS RDS Postgresql DB. Both front-ends are written using Next/React and MUI.
 
-I worked on the project on weekends and after work for a month.
+The project was built in a month, working on weekends and on free time after a normal day job.
  
 # Tech
 
