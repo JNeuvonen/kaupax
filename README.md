@@ -25,7 +25,7 @@ The backend is written in Node, and the demo site that is online uses AWS RDS Po
 - Node
 - Prisma
 - MUI
-- JWT for Auth (also had google oAuth previously)
+- JWT for Auth (also had google OAuth previously)
 
 # Running locally
 
