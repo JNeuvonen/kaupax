@@ -15,7 +15,7 @@ The backend is written in Node, and the demo site that is online uses AWS RDS Po
 
 I worked on the project on weekends and after work for a month.
  
-# Tech used
+# Tech
 
 - TypeScript
 - React
@@ -28,6 +28,19 @@ I worked on the project on weekends and after work for a month.
 - Prisma
 - MUI
 - JWT for Auth (also had google OAuth previously)
+
+# Features
+
+- Clients can post listings
+- Realtors can bid on listings
+- Users can accept bids
+- Chat for realtors and clients
+- Auth
+- Map, clusters on map, geocoding from address to lat/long coordinates.
+- Usable on mobile
+- Emails/Notifications
+- AWS S3 storage for listings pictures
+- Backend auto-deployment on commits via github workflows and containers
 
 # Running locally
 
